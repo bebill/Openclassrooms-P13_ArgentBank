@@ -1,9 +1,8 @@
 import { FormEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router-dom";
-import axios from "axios";
 import * as authActions from "../redux/slices/authSlice";
-import { apiUrl } from "../redux/utils/url";
+import { login } from "../services/fetchData";
 
 const AuthForm = () => {
   const dispatch = useDispatch();
@@ -11,22 +10,17 @@ const AuthForm = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
 
-  const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     dispatch(authActions.loginStart());
 
-    axios
-      .post(`${apiUrl}/login`, {
-        email: username,
-        password,
-      })
-      .then((response) => {
-        dispatch(authActions.loginSuccess({ token: response.data.body.token }));
-        navigate("/profile");
-      })
-      .catch((error) => {
-        dispatch(authActions.loginFailure({ error: error.message }));
-      });
+    try {
+      const token = await login(username, password);
+      dispatch(authActions.loginSuccess({ token }));
+      navigate("/profile");
+    } catch (error: any) {
+      dispatch(authActions.loginFailure({ error: error.message }));
+    }
   };
 
   return (
