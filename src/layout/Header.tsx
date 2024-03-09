@@ -13,7 +13,7 @@ export const Header = () => {
           <h1 className="sr-only">Argent Bank</h1>
         </Link>
         <div>
-          <NavLink className="main-nav-item" to="#">
+          <NavLink className="main-nav-item" to="/login">
             <i className="fa fa-user-circle"></i>
              Sign In
           </NavLink>
