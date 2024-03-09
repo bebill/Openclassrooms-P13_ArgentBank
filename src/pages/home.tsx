@@ -1,4 +1,4 @@
-import { Hero } from "./layout/Hero";
+import { Hero } from "../layout/Hero";
 
 export const Home = () => {
   return (
