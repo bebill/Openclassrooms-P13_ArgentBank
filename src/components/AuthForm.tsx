@@ -43,7 +43,7 @@ const AuthForm = () => {
     const storedUsername = localStorage.getItem("username");
     const storedPassword = localStorage.getItem("password");
 
-    if (storedUsername && storedPassword) {
+    if (!username && !password && storedUsername && storedPassword) {
       setUsername(storedUsername);
       setPassword(storedPassword);
     }
