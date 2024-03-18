@@ -94,7 +94,7 @@ const AuthForm = () => {
       </div>
 
       <button className="sign-in-button" type="submit">
-        Sign In
+        Sign in
       </button>
     </form>
   );
