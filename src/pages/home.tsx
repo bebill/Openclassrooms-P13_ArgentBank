@@ -31,7 +31,7 @@ export const Home = () => {
       <section className="features">
         <h2 className="sr-only">Features</h2>
         {features.map((feature, index) => (
-          <Feature key={index} data={feature} />
+          <Feature key={index} feature={feature} />
         ))}
       </section>
     </main>
