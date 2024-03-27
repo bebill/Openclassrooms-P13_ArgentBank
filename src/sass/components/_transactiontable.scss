@@ -12,6 +12,11 @@
         border-collapse: collapse;
         font-size: smaller;
 
+        tr {
+            cursor: pointer;
+
+        }
+
         td {
             padding: 1rem 0.2rem;
             background-color: #fff;
