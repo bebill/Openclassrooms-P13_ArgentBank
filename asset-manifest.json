@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/Openclassrooms-P13_ArgentBank/static/css/main.1ea15c75.css",
+    "main.js": "/Openclassrooms-P13_ArgentBank/static/js/main.19baa5ae.js",
+    "static/js/488.e235c736.chunk.js": "/Openclassrooms-P13_ArgentBank/static/js/488.e235c736.chunk.js",
+    "static/media/bank-tree.jpeg": "/Openclassrooms-P13_ArgentBank/static/media/bank-tree.4d59987c7c62b024b014.jpeg",
+    "index.html": "/Openclassrooms-P13_ArgentBank/index.html",
+    "main.1ea15c75.css.map": "/Openclassrooms-P13_ArgentBank/static/css/main.1ea15c75.css.map",
+    "main.19baa5ae.js.map": "/Openclassrooms-P13_ArgentBank/static/js/main.19baa5ae.js.map",
+    "488.e235c736.chunk.js.map": "/Openclassrooms-P13_ArgentBank/static/js/488.e235c736.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ea15c75.css",
+    "static/js/main.19baa5ae.js"
+  ]
+}
