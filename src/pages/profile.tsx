@@ -20,7 +20,7 @@ export const Profile = () => {
       description: "Available Balance",
     },
     {
-      title: "Argent Bank Credit Card (x8349)",
+      title: "Argent Bank Credit Card (x8450)",
       amount: "$184.30",
       description: "Current Balance",
     },
@@ -66,7 +66,7 @@ export const Profile = () => {
         {isEditing ? (
           <EditProfileForm firstName="" lastName="" onClose={handleCloseEdit} />
         ) : (
-          <div className="header">
+          <div className="profile-header">
             <h1>
               {user.firstName} {user.lastName}
             </h1>
@@ -78,7 +78,7 @@ export const Profile = () => {
         )}
         <h2 className="sr-only">Accounts</h2>
         {accounts.map((account, index) => (
-          <Account key={index} data={account} />
+          <Account key={index} account={account} />
         ))}
       </main>
     );
