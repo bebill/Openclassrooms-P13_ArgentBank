@@ -1,12 +1,10 @@
 @import "./base/index";
 
-// @use "./utils/variables";
-
-// @use "./components/assetcardcover";
-// @use "./components/assetcardlist";
-// @use "./components/collapsible";
-// @use "./components/gallery";
-// @use "./components/rating";
+@import"./components/account";
+@import"./components/editprofileform";
+@import"./components/feature";
+@import"./components/transactiontable";
+@import"./components/transactiondetails";
 
 @import "./layout/header";
 @import "./layout/hero";
@@ -16,3 +14,4 @@
 @import "./pages/login";
 @import "./pages/profile";
 @import "./pages/error404";
+@import "./pages/transactions";

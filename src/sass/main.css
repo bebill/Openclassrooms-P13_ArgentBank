@@ -64,6 +64,59 @@ body {
   /* 3 */
 }
 
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #c2cbd4;
+  background-color: #fff;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 2rem;
+}
+.account__amount {
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+.account__amount-description {
+  margin: 0;
+}
+.account__title {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  font-weight: normal;
+}
+.account__content-wrapper {
+  width: 100%;
+  flex: 1;
+}
+.account__content-wrapper--cta {
+  flex: 0;
+}
+.account--cta .transaction-button {
+  width: 200px;
+  margin-top: 0;
+}
+
+.transaction-button {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 1rem;
+  border-color: #655ef2;
+  background-color: #655ef2;
+  color: #fff;
+  border-radius: 5px;
+}
+
 .main-nav {
   display: flex;
   justify-content: space-between;
@@ -146,7 +199,7 @@ body {
   font-size: 0.9rem;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 720px) {
   .hero {
     height: 400px;
     background-position: 0% 33%;
@@ -197,7 +250,7 @@ body {
   margin-bottom: 0.5rem;
 }
 
-@media (min-width: 920px) {
+@media (min-width: 720px) {
   .features {
     flex-direction: row;
   }
